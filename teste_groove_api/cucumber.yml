@@ -1,0 +1,15 @@
+## YAML Templatesss
+---
+default: -p pretty -p scenario -p prod -p html -p json
+
+pretty: --format pretty
+progress:  --format progress
+
+scenario: -t @Pesquisarfilmes
+
+html:  --format html --out=results/report.html
+json:  --format json --out=results/report.json
+
+prod: ENVIRONMENT=producao
+homg: ENVIRONMENT=homolog
+

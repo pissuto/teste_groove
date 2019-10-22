@@ -1,0 +1,71 @@
+[
+  {
+    "uri": "features/specifications/api_test.feature",
+    "id": "validar-api",
+    "keyword": "Funcionalidade",
+    "name": "Validar API",
+    "description": "    Sendo um usuario\n    Posso consultar filmes\n    Para assistir",
+    "line": 2,
+    "elements": [
+      {
+        "id": "validar-api;pesquisar-titulo-dos-filmes",
+        "keyword": "Cenario",
+        "name": "Pesquisar Titulo dos Filmes",
+        "description": "",
+        "line": 8,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@Pesquisarfilmes",
+            "line": 7
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que informo o nome do diretor e produtor:",
+            "line": 9,
+            "rows": [
+              {
+                "cells": [
+                  "diretor",
+                  "George Lucas"
+                ]
+              },
+              {
+                "cells": [
+                  "produtor",
+                  "Rick McCallum"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/steps_definitions/api_test.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 196740
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "faço uma chamada na API do swapi",
+            "line": 12,
+            "output": [
+              "Attack of the Clones",
+              "The Phantom Menace",
+              "Revenge of the Sith"
+            ],
+            "match": {
+              "location": "features/steps_definitions/api_test.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1886200538
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
